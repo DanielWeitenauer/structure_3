@@ -1,0 +1,27 @@
+package: structure
+version: '2.6.1'
+author: Markus Staab
+supportpage: www.redaxo.org/de/forum/
+
+page:
+    title: translate:structure
+    perm: structure/hasStructurePerm
+    block: system
+    prio: 10
+    pjax: true
+    icon: rex-icon rex-icon-open-category
+
+pages:
+    linkmap:
+        title: translate:linkmap
+        main: true
+        block: system
+        popup: true
+        hidden: true
+        perm: structure/hasStructurePerm
+        pjax: true
+
+system_plugins: [content]
+
+requires:
+    redaxo: ^5.5.0
