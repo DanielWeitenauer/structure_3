@@ -6,7 +6,7 @@
 
 class rex_structure_data
 {
-    use rex_factory_trait;
+    use rex_singleton_trait;
 
     /**
      * @var int
@@ -60,16 +60,6 @@ class rex_structure_data
      * @var rex_pager
      */
     protected $pager;
-
-    /**
-     * @return static
-     */
-    public static function factory()
-    {
-        $class = static::getFactoryClass();
-
-        return new $class();
-    }
 
     /**
      * Use factory() method to instantiate

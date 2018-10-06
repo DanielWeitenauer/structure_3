@@ -4,7 +4,7 @@
  * @package redaxo5
  */
 
-$structure_data = rex_structure_data::factory();
+$structure_data = rex_structure_data::getInstance();
 
 // basic request vars
 $category_id = $structure_data->getCategoryId();
